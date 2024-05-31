@@ -1,0 +1,101 @@
+.container-fluid {
+    margin-top: 100px;
+}
+
+.row {
+    margin-top: 5px;
+}
+
+span {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.fKeys {
+    display: grid;
+    grid-template-columns: repeat(17, 1fr);
+    gap: 10px;
+}
+
+.nkeys {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 10px;
+}
+
+.btn-16 {
+    grid-column: 14 / span 2;
+}
+
+.qwkeys {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 10px;
+}
+
+.btn-tab {
+    
+}
+
+.btn-slash {
+    
+}
+
+.askeys {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 10px;
+}
+.btn-caps {
+    
+}
+
+.btn-enter {
+    
+}
+
+.zxkeys {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 10px;
+}
+.btn-shift-left {
+    
+}
+
+.btn-shift-right {
+    
+}
+
+.spkeys {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 10px;
+}
+
+.btn-space {
+    grid-column: 5 /span 6;
+}
+
+.arrowupdn {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.arrow {
+    text-align: center;
+    height: 25px;
+}
+
+.screen {
+    margin-top: 30px;
+    background-color: rgb(184, 207, 228);
+    display: flex;
+    height: 100px;
+    width: 70%;
+    margin-left: 120px;
+    justify-content: center;
+    text-align: justify;
+}
