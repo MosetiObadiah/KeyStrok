@@ -1,17 +1,18 @@
 const allButtons = document.querySelectorAll('button');
+const screenElement = document.querySelector('.screen p'); // Select the paragraph inside the screen div
 
 document.addEventListener('keydown', (event) => {
-    const pressedKey = event.key.toLowerCase(); // Get the pressed key in lowercase
+    const pressedKey = event.key.toLowerCase();
 
     for (const button of allButtons) {
         if (button.textContent.toLowerCase() === pressedKey) {
             // Found the matching button
             switch (pressedKey) {
-                // Handle function keys (F1-F12)
+                // Function Keys (F1-F12)
                 case pressedKey.startsWith('f'):
-                    console.log(`Function Key Pressed: F${pressedKey.slice(1)}`);
+                    screenElement.textContent += `F${pressedKey.slice(1)}`;
                     break;
-                // Handle specific keys with custom classes
+                // Specific keys with custom classes
                 case 'backspace':
                 case 'tab':
                 case 'caps lock':
@@ -19,18 +20,18 @@ document.addEventListener('keydown', (event) => {
                 case 'shift':  // Handle both left and right shift
                 case 'ctrl':  // Handle both left and right ctrl
                 case 'alt':   // Handle both left and right alt
-                    console.log(`Special Key Pressed: ${button.textContent}`);
+                    screenElement.textContent += button.textContent;
                     break;
-                // Handle arrow keys
+                // Arrow Keys
                 case 'arrowup':
                 case 'arrowdown':
                 case 'arrowleft':
                 case 'arrowright':
-                    console.log(`Arrow Key Pressed: ${button.textContent}`);
+                    screenElement.textContent += button.textContent;
                     break;
-                // Handle other keys
+                // Other Keys
                 default:
-                    console.log(`Key Pressed: ${button.textContent}`);
+                    screenElement.textContent += pressedKey;
             }
             break; // Exit the loop after finding the matching button
         }
