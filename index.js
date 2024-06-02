@@ -18,11 +18,5 @@ inputTrigger.addEventListener('click', () => {
     hiddenInput.style.left = '-9999px';
 
     document.body.appendChild(hiddenInput);
-    hiddenInput.focus();
-
-
-    
-    setTimeout(() => {
-        document.body.removeChild(hiddenInput);
-    }, 100); 
+    hiddenInput.focus(); 
 });
